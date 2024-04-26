@@ -1,0 +1,136 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(154, 184, 184);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#startscreen {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#text {
+    text-align: center;
+    font-size: larger;
+}
+
+#continuebutton {
+    width: 80px;
+    align-self: center;
+}
+
+button {
+    border-radius: 5px;
+}
+
+#box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(225, 225, 225, 0.95);
+    z-index: 9999;
+    /* Ensure it's on top of other elements */
+    padding: 20px;
+    color: rgb(59, 54, 95);
+    width: 80%;
+    height: fit-content
+}
+
+#closerow {
+    height: 20px;
+    display: flex;
+    justify-content: end;
+
+}
+
+#boxtext {
+    padding: 20px;
+    text-align: center;
+}
+
+#closerow img {
+    height: 100%;
+    opacity: 0.5;
+}
+
+#closerow img:hover {
+    height: 100%;
+    opacity: 1
+}
+
+#buttonbox1 {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    /* Ensure it's on top of other elements */
+    padding: 20px;
+    color: rgb(59, 54, 95);
+    width: 80%;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+}
+
+#buttonbox2 {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    /* Ensure it's on top of other elements */
+    padding: 20px;
+    color: rgb(59, 54, 95);
+    width: 80%;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weiterbutton {
+    width: fit-content;
+    margin-top: 20px;
+}
+
+#buttonrow {
+    display: none;
+    justify-content: space-around;
+}
+
+#checkboxbox {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    /* Ensure it's on top of other elements */
+    padding: 20px;
+    color: rgb(59, 54, 95);
+    width: 80%;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gif {
+    display: none
+}
